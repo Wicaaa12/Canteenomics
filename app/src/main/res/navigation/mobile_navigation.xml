@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.canteen_omics.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_canteen_1Fragment"
+            app:destination="@id/canteen_1Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.canteen_omics.ui.dashboard.DashboardFragment"
+        android:label="Orders"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_canteen_1Fragment"
+            app:destination="@id/canteen_1Fragment" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_payFragment"
+            app:destination="@id/payFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.canteen_omics.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/canteen_1Fragment"
+        android:name="com.example.canteen_omics.Canteen_1Fragment"
+        android:label="Menu"
+        tools:layout="@layout/fragment_canteen_1">
+        <action
+            android:id="@+id/action_canteen_1Fragment_to_drinksFragment"
+            app:destination="@id/drinksFragment" />
+        <action
+            android:id="@+id/action_canteen_1Fragment_to_othersFragment"
+            app:destination="@id/othersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drinksFragment"
+        android:name="com.example.canteen_omics.DrinksFragment"
+        android:label="Drinks"
+        tools:layout="@layout/fragment_drinks">
+        <action
+            android:id="@+id/action_drinksFragment_to_canteen_1Fragment"
+            app:destination="@id/canteen_1Fragment" />
+        <action
+            android:id="@+id/action_drinksFragment_to_othersFragment"
+            app:destination="@id/othersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/othersFragment"
+        android:name="com.example.canteen_omics.OthersFragment"
+        android:label="Others"
+        tools:layout="@layout/fragment_others">
+        <action
+            android:id="@+id/action_othersFragment_to_canteen_1Fragment"
+            app:destination="@id/canteen_1Fragment" />
+        <action
+            android:id="@+id/action_othersFragment_to_drinksFragment"
+            app:destination="@id/drinksFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_add"
+        android:name="com.example.canteen_omics.ui.AddFragment"
+        android:label="Add"
+        tools:layout="@layout/fragment_add">
+        <action
+            android:id="@+id/action_navigation_add_to_adminFragment"
+            app:destination="@id/adminFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/payFragment"
+        android:name="com.example.canteen_omics.PayFragment"
+        android:label="Checkout"
+        tools:layout="@layout/fragment_pay">
+        <action
+            android:id="@+id/action_payFragment_to_prepareFragment"
+            app:destination="@id/prepareFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/prepareFragment"
+        android:name="com.example.canteen_omics.PrepareFragment"
+        android:label="Place Order"
+        tools:layout="@layout/fragment_prepare" />
+    <fragment
+        android:id="@+id/adminFragment"
+        android:name="com.example.canteen_omics.AdminFragment"
+        android:label="Admin"
+        tools:layout="@layout/fragment_admin">
+        <action
+            android:id="@+id/action_adminFragment_to_adminOrderFragment"
+            app:destination="@id/adminOrderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminOrderFragment"
+        android:name="com.example.canteen_omics.AdminOrderFragment"
+        android:label="Order"
+        tools:layout="@layout/fragment_admin_order" />
+</navigation>
