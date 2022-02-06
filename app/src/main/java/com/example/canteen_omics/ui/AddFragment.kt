@@ -42,8 +42,19 @@ class AddFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_add, container, false)
     }
 
+    override fun onStart() {
+        super.onStart()
+        // Check if user is signed in (non-null) and update UI accordingly.
+        val currentUser = auth.currentUser
+        if(currentUser != null){
+            findNavController().navigate(R.id.action_navigation_add_to_adminFragment)
+        }
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+
 
         emailEt = view.findViewById(R.id.email_edt_text)
         passwordEt = view.findViewById(R.id.pass_edt_text)

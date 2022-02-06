@@ -103,6 +103,12 @@
         <action
             android:id="@+id/action_adminFragment_to_adminOrderFragment"
             app:destination="@id/adminOrderFragment" />
+        <action
+            android:id="@+id/action_adminFragment_to_navigation_add"
+            app:destination="@id/navigation_add" />
+        <action
+            android:id="@+id/action_adminFragment_to_addMenu"
+            app:destination="@id/addMenu" />
     </fragment>
     <fragment
         android:id="@+id/adminOrderFragment"
@@ -116,5 +122,14 @@
         <action
             android:id="@+id/action_forgotPassword_to_navigation_add"
             app:destination="@id/navigation_add" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMenu"
+        android:name="com.example.canteen_omics.AddMenu"
+        android:label="fragment_add_menu"
+        tools:layout="@layout/fragment_add_menu" >
+        <action
+            android:id="@+id/action_addMenu_to_adminFragment"
+            app:destination="@id/adminFragment" />
     </fragment>
 </navigation>
