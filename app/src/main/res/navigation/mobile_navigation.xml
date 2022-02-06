@@ -73,11 +73,13 @@
     <fragment
         android:id="@+id/navigation_add"
         android:name="com.example.canteen_omics.ui.AddFragment"
-        android:label="Add"
-        tools:layout="@layout/fragment_add">
+        android:label="Add">
         <action
             android:id="@+id/action_navigation_add_to_adminFragment"
             app:destination="@id/adminFragment" />
+        <action
+            android:id="@+id/action_navigation_add_to_forgotPassword"
+            app:destination="@id/forgotPassword" />
     </fragment>
     <fragment
         android:id="@+id/payFragment"
@@ -107,4 +109,12 @@
         android:name="com.example.canteen_omics.AdminOrderFragment"
         android:label="Order"
         tools:layout="@layout/fragment_admin_order" />
+    <fragment
+        android:id="@+id/forgotPassword"
+        android:name="com.example.canteen_omics.ForgotPassword"
+        android:label="ForgotPassword" >
+        <action
+            android:id="@+id/action_forgotPassword_to_navigation_add"
+            app:destination="@id/navigation_add" />
+    </fragment>
 </navigation>
