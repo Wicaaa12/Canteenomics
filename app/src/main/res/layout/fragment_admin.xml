@@ -14,135 +14,108 @@
         android:layout_height="40dp"
         android:backgroundTint="@color/gray"
         android:clickable="true"
+        android:contentDescription="Add Menu"
         android:src="@drawable/ic_baseline_add_24"
         android:tint="@color/gray"
         app:fabSize="mini"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.755"
+        app:layout_constraintVertical_bias="0.77"
         app:rippleColor="@color/gray" />
 
-    <ImageView
-        android:id="@+id/imageView6"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_addmenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/sisiig"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.131"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.294" />
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/gray"
+        android:clickable="true"
+        android:visibility="invisible"
+        android:src="@drawable/ic_baseline_restaurant_menu_24"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/fab_add"
+        app:layout_constraintEnd_toEndOf="@+id/fab_add"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="@+id/fab_add" />
 
-    <TextView
-        android:id="@+id/menu1_textView"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_adddrink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mneu name"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.076"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/adamina"
-        android:text="Mang Boy Menu"
-        android:textColor="@color/maroon"
-        android:textSize="30sp"
-        android:typeface="monospace"
-        app:layout_constraintBottom_toTopOf="@+id/menu1_textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.594" />
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/appCompatImageView2"
-        android:layout_width="match_parent"
-        android:layout_height="3dp"
-        android:layout_margin="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="9dp"
-        android:alpha="0.5"
-        android:background="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/gray"
+        android:clickable="true"
+        android:visibility="invisible"
+        android:src="@drawable/ic_baseline_local_drink_24"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/fab_addmenu"
+        app:layout_constraintEnd_toEndOf="@+id/fab_addmenu"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.387" />
+        app:layout_constraintStart_toStartOf="@+id/fab_addmenu" />
 
-    <TextView
-        android:id="@+id/menu1_description"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_addothers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
-        android:text="Lorem ipsum"
-        android:textColor="@color/white"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/gray"
+        android:clickable="true"
+        android:visibility="invisible"
+        android:src="@drawable/ic_baseline_others_24"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/fab_adddrink"
+        app:layout_constraintEnd_toEndOf="@+id/fab_adddrink"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/fab_adddrink" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewadmin"
+        android:layout_width="408dp"
+        android:layout_height="449dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/menu1_textView"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <CheckBox
-        android:id="@+id/checkBox3"
-        android:layout_width="34dp"
-        android:layout_height="42dp"
-        app:layout_constraintBottom_toTopOf="@+id/appCompatImageView2"
-        app:layout_constraintEnd_toStartOf="@+id/imageView6"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:layout_constraintVertical_bias="0.7" />
-
-    <ImageButton
-        android:id="@+id/imageButton10"
-        android:layout_width="30dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="134dp"
-        android:src="@android:drawable/ic_menu_close_clear_cancel"
-        app:layout_constraintBottom_toTopOf="@+id/appCompatImageView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/menu1_description"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:layout_constraintVertical_bias="0.325" />
-
-    <ImageButton
-        android:id="@+id/adminorder_button"
-        android:layout_width="67dp"
-        android:layout_height="50dp"
-        android:backgroundTint="@color/gray"
-        android:src="@drawable/cart"
-        app:layout_constraintBottom_toTopOf="@+id/textView8"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.997"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.159" />
+        app:layout_constraintVertical_bias="0.684" />
 
-    <TextView
-        android:id="@+id/menu1_price"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="₱ 00.00"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/appCompatImageView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.432"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menu1_description"
-        app:layout_constraintVertical_bias="0.38" />
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/constraintLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/recyclerView3"-->
+<!--            android:layout_width="409dp"-->
+<!--            android:layout_height="508dp"-->
+<!--            android:layout_marginStart="3dp"-->
+<!--            android:layout_marginTop="192dp"-->
+<!--            android:layout_marginEnd="3dp"-->
+<!--            android:layout_marginBottom="61dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.433" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView13"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/adamina"-->
+<!--            android:text="Orders"-->
+<!--            android:textColor="@color/maroon"-->
+<!--            android:textSize="25sp"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/recyclerView3"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.643" />-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

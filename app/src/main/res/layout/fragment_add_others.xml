@@ -5,25 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".AddMenu" >
+    tools:context=".AddOthers" >
 
     <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/textViewao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="140dp"
         android:fontFamily="@font/adamina"
-        android:text="Add Menu"
+        android:text="Add Drink"
         android:textColor="@color/maroon"
         android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView24"
+        app:layout_constraintBottom_toTopOf="@+id/textView24ao"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView24"
+        android:id="@+id/textView24ao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="112dp"
@@ -31,7 +31,7 @@
         android:text="Menu Name"
         android:textColor="@color/white"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/add_descript"
+        app:layout_constraintBottom_toTopOf="@+id/add_otherdescript"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.129"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,22 +39,22 @@
         app:layout_constraintVertical_bias="0.994" />
 
     <EditText
-        android:id="@+id/add_menu"
+        android:id="@+id/add_others"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/add_descript"
+        app:layout_constraintBottom_toTopOf="@+id/add_otherdescript"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.208"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/textView24ao"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView25"
+        android:id="@+id/textView25ao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
@@ -62,14 +62,14 @@
         android:text="Price"
         android:textColor="@color/white"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/add_price"
+        app:layout_constraintBottom_toTopOf="@+id/add_othersprice"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.112"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_descript" />
+        app:layout_constraintTop_toBottomOf="@+id/add_otherdescript" />
 
     <EditText
-        android:id="@+id/add_price"
+        android:id="@+id/add_othersprice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
@@ -78,30 +78,30 @@
         android:inputType="numberSigned"
         android:text="₱ "
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/add_btn"
+        app:layout_constraintBottom_toTopOf="@+id/addothers_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.199"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/textView25ao"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView26"
+        android:id="@+id/textView26ao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/adamina"
         android:text="Description of the Menu"
         android:textColor="@color/white"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/add_descript"
+        app:layout_constraintBottom_toTopOf="@+id/add_otherdescript"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.186"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_menu"
+        app:layout_constraintTop_toBottomOf="@+id/add_others"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/add_descript"
+        android:id="@+id/add_otherdescript"
         android:layout_width="324dp"
         android:layout_height="91dp"
         android:ems="10"
@@ -109,14 +109,14 @@
         android:hint="Short Description"
         android:inputType="textMultiLine"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/textView25"
+        app:layout_constraintBottom_toTopOf="@+id/textView25ao"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+        app:layout_constraintTop_toBottomOf="@+id/textView26ao" />
 
     <Button
-        android:id="@+id/add_btn"
+        android:id="@+id/addothers_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="158dp"

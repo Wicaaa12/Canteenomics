@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/addMenu">
 
     <fragment
         android:id="@+id/navigation_home"
@@ -109,6 +109,15 @@
         <action
             android:id="@+id/action_adminFragment_to_addMenu"
             app:destination="@id/addMenu" />
+        <action
+            android:id="@+id/action_adminFragment_to_addDrink"
+            app:destination="@id/addDrink" />
+        <action
+            android:id="@+id/action_adminFragment_to_addOthers"
+            app:destination="@id/addOthers" />
+        <action
+            android:id="@+id/action_adminFragment_to_navigation_add2"
+            app:destination="@id/navigation_add" />
     </fragment>
     <fragment
         android:id="@+id/adminOrderFragment"
@@ -131,5 +140,22 @@
         <action
             android:id="@+id/action_addMenu_to_adminFragment"
             app:destination="@id/adminFragment" />
+        <action
+            android:id="@+id/action_addMenu_to_navigation_add"
+            app:destination="@id/navigation_add" />
     </fragment>
+    <fragment
+        android:id="@+id/addDrink"
+        android:name="com.example.canteen_omics.AddDrink"
+        android:label="fragment_add_drink"
+        tools:layout="@layout/fragment_add_drink" >
+        <action
+            android:id="@+id/action_addDrink_to_navigation_add2"
+            app:destination="@id/navigation_add" />
+    </fragment>
+    <fragment
+        android:id="@+id/addOthers"
+        android:name="com.example.canteen_omics.AddOthers"
+        android:label="fragment_add_others"
+        tools:layout="@layout/fragment_add_others" />
 </navigation>

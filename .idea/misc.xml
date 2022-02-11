@@ -13,10 +13,16 @@
         <entry key="..\:/Users/DK/AndroidStudioProjects/Canteenomics2/app/src/main/res/drawable/transparent.xml" value="0.2703125" />
         <entry key="..\:/Users/DK/AndroidStudioProjects/Canteenomics2/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/DK/AndroidStudioProjects/Canteenomics2/app/src/main/res/layout/activity_navigation.xml" value="0.25" />
+        <entry key="..\:/Users/DK/AndroidStudioProjects/Canteenomics2/app/src/main/res/layout/add_drinkitem.xml" value="0.264" />
+        <entry key="..\:/Users/DK/AndroidStudioProjects/Canteenomics2/app/src/main/res/layout/add_othersitem.xml" value="0.25" />
+        <entry key="..\:/Users/DK/AndroidStudioProjects/Canteenomics2/app/src/main/res/layout/admin_item.xml" value="0.25" />
+        <entry key="..\:/Users/DK/AndroidStudioProjects/Canteenomics2/app/src/main/res/layout/admin_itemm.xml" value="0.25" />
         <entry key="..\:/Users/DK/AndroidStudioProjects/Canteenomics2/app/src/main/res/layout/dialog_userpay.xml" value="0.24456521739130435" />
         <entry key="..\:/Users/DK/AndroidStudioProjects/Canteenomics2/app/src/main/res/layout/fragment_add.xml" value="0.25271739130434784" />
+        <entry key="..\:/Users/DK/AndroidStudioProjects/Canteenomics2/app/src/main/res/layout/fragment_add_drink.xml" value="0.25" />
         <entry key="..\:/Users/DK/AndroidStudioProjects/Canteenomics2/app/src/main/res/layout/fragment_add_menu.xml" value="0.2359375" />
-        <entry key="..\:/Users/DK/AndroidStudioProjects/Canteenomics2/app/src/main/res/layout/fragment_admin.xml" value="0.264" />
+        <entry key="..\:/Users/DK/AndroidStudioProjects/Canteenomics2/app/src/main/res/layout/fragment_add_others.xml" value="0.2359375" />
+        <entry key="..\:/Users/DK/AndroidStudioProjects/Canteenomics2/app/src/main/res/layout/fragment_admin.xml" value="0.2" />
         <entry key="..\:/Users/DK/AndroidStudioProjects/Canteenomics2/app/src/main/res/layout/fragment_admin_order.xml" value="0.24456521739130435" />
         <entry key="..\:/Users/DK/AndroidStudioProjects/Canteenomics2/app/src/main/res/layout/fragment_canteen_1.xml" value="0.2" />
         <entry key="..\:/Users/DK/AndroidStudioProjects/Canteenomics2/app/src/main/res/layout/fragment_dashboard.xml" value="0.24864130434782608" />
@@ -28,9 +34,11 @@
         <entry key="..\:/Users/DK/AndroidStudioProjects/Canteenomics2/app/src/main/res/layout/fragment_others.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/DK/AndroidStudioProjects/Canteenomics2/app/src/main/res/layout/fragment_pay.xml" value="0.24456521739130435" />
         <entry key="..\:/Users/DK/AndroidStudioProjects/Canteenomics2/app/src/main/res/layout/fragment_prepare.xml" value="0.24456521739130435" />
+        <entry key="..\:/Users/DK/AndroidStudioProjects/Canteenomics2/app/src/main/res/layout/fragment_update_password.xml" value="0.25" />
         <entry key="..\:/Users/DK/AndroidStudioProjects/Canteenomics2/app/src/main/res/layout/item_notif.xml" value="0.24456521739130435" />
         <entry key="..\:/Users/DK/AndroidStudioProjects/Canteenomics2/app/src/main/res/layout/list_row.xml" value="0.24456521739130435" />
         <entry key="..\:/Users/DK/AndroidStudioProjects/Canteenomics2/app/src/main/res/layout/notificationitem.xml" value="0.24456521739130435" />
+        <entry key="..\:/Users/DK/AndroidStudioProjects/Canteenomics2/app/src/main/res/layout/row_orderitem.xml" value="0.25" />
         <entry key="..\:/Users/DK/AndroidStudioProjects/Canteenomics2/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/DK/AndroidStudioProjects/Canteenomics2/app/src/main/res/menu/menu_main.xml" value="0.25" />
       </map>
